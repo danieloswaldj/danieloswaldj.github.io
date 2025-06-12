@@ -3,35 +3,41 @@
 
 <head>
     <title>Daniel Oswald J</title>
-    <link rel="icon"  href="favicon.png">
+    <link rel="icon" href="favicon.png">
 </head>
 <style>
     body {
         background-image: url('web1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        margin: 0;
+        /* Remove default margin */
+        height: 100vh;
     }
 
     a {
         font-size: 40px;
         color: rgb(255, 255, 255);
         text-align: right;
-        }
+    }
+
     iframe {
         text-align: center;
     }
 </style>
 
+
 <body onclick="document.getElementById('bgm').play();">
-<iframe width="312" height="315" src="https://www.youtube.com/embed/qNORJocUFKA?si=9hISx5WxWXRJxPBM"
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<div style="text-align:center">
-    <a href="contact.html">Contact</a>
-</div>
-<audio id="bgm" autoplay loop hidden>
-    <source src="./danielsbgm.mp3" type="audio/mpeg">
-</audio>
+
+
+    <div style="text-align:center">
+        <a href="contact.html">Contact</a>
+    </div>
+    <audio id="bgm" autoplay loop hidden>
+        <source src="./danielsbgm.mp3" type="audio/mpeg">
+    </audio>
+    <a href="Services.html">Services</a>
 </body>
+
 
 </html>
