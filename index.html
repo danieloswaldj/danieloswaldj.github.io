@@ -5,6 +5,38 @@
     <title>Daniel Oswald J</title>
     <link rel="icon" href="favicon.png">
 </head>
+<script>
+   function rotateBackground() {
+    const width = window.innerWidth;
+
+    if (width <= 768) {
+        // Mobile view
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundPosition = "center";
+        document.body.style.transform = "rotate(10deg)"; // Rotate the background image
+        document.body.style.transition = "transform 0.5s ease"; // Smooth transition
+    } else {
+        // Desktop view
+        
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundPosition = "center";
+        document.body.style.transform = "rotate(0deg)"; // No rotation for desktop
+    }
+}
+
+// Call the function on page load
+rotateBackground();
+
+// Optional: Call the function on window resize
+window.addEventListener('resize', rotateBackground);
+
+// Call the function on page load
+handleDevice();
+
+// Optional: Call the function on window resize
+window.addEventListener('resize', handleDevice);
+
+</script>
 <style>
     body {
         background-image: url('web1.jpg');
